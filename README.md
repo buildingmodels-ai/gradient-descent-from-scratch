@@ -1,6 +1,3 @@
-# gradient-descent-from-scratch
-Manual implementation of gradient descent optimization using NumPy for linear regression.
-
 # Gradient Descent from Scratch
 Manual implementation of gradient descent optimization using NumPy for linear regression.
 
