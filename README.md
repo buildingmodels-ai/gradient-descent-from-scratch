@@ -15,16 +15,19 @@ The goal of this project is to understand how gradient descent works by implemen
 For linear regression:
 
 Prediction:
+
 $$
 \hat{y} = wX + b
 $$
 
 Loss (MSE):
+
 $$
 L = \frac{1}{n} \sum (\hat{y} - y)^2
 $$
 
 Gradients:
+
 $$
 \frac{\partial L}{\partial w} = \frac{2}{n} \sum (\hat{y} - y)X
 $$
