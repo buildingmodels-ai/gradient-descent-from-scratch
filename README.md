@@ -5,7 +5,7 @@ Manual implementation of gradient descent optimization using NumPy for linear re
 The goal of this project is to understand how gradient descent works by implementing it manually without using machine learning libraries.
 
 ## Method
-- Generate synthetic linear data: y = 2x + 1 + noise
+- Generate synthetic linear data: $y = 2x + 1 + \text{noise}$
 - Define Mean Squared Error (MSE) loss
 - Compute analytical gradients
 - Update parameters iteratively
@@ -15,14 +15,23 @@ The goal of this project is to understand how gradient descent works by implemen
 For linear regression:
 
 Prediction:
-ŷ = wX + b
+$$
+\hat{y} = wX + b
+$$
 
 Loss (MSE):
-L = (1/n) Σ (ŷ - y)²
+$$
+L = \frac{1}{n} \sum (\hat{y} - y)^2
+$$
 
 Gradients:
-∂L/∂w = (2/n) Σ (ŷ - y)X  
-∂L/∂b = (2/n) Σ (ŷ - y)
+$$
+\frac{\partial L}{\partial w} = \frac{2}{n} \sum (\hat{y} - y)X
+$$
+
+$$
+\frac{\partial L}{\partial b} = \frac{2}{n} \sum (\hat{y} - y)
+$$
 
 ## Technologies Used
 - Python
@@ -30,7 +39,7 @@ Gradients:
 - Matplotlib
 
 ## Result
-The algorithm successfully learns parameters close to the true values (w ≈ 2, b ≈ 1), demonstrating convergence of gradient descent.
+The algorithm successfully learns parameters close to the true values ($w \approx 2$, $b \approx 1$), demonstrating convergence of gradient descent.
 
 ## How to Run
 ```bash
